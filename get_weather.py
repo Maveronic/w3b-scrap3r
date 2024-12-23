@@ -12,7 +12,7 @@ options.add_argument('--log-level=3')
 # Create a Service object for Edge WebDriver
 # Here, the executable path should be replaced with yours,
 # which is the part to your Webdriver 
-service = Service(executable_path="C:\\Users\\Asus\\Downloads\\edgedriver_win64\\msedgedriver.exe")  # Replace with the path to your Edge WebDriver
+service = Service(executable_path="C:\\Users\\Asus\\Downloads\\edgedriver_win64\\msedgedriver.exe")
 service.start()
 
 # Create the driver instance
@@ -21,6 +21,7 @@ driver = webdriver.Edge(service=service, options=options)
 # Set an implicit wait of 7 seconds
 driver.implicitly_wait(7)
 
+# Make use of Open Weather Map site to search for the weather
 def get_weather_for_city(city_name):
     # Set up the URL
     base_url = "https://openweathermap.org/find?q="
