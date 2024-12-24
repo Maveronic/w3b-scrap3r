@@ -11,7 +11,7 @@ options.add_argument('--log-level=3')
 
 # Create a Service object for Edge WebDriver
 # Here, the executable path should be replaced with yours,
-# which is the part to your Webdriver 
+# which is the path to your Webdriver 
 service = Service(executable_path="C:\\Users\\Asus\\Downloads\\edgedriver_win64\\msedgedriver.exe")
 service.start()
 
